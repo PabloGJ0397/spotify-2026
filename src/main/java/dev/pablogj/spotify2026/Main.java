@@ -6,14 +6,14 @@ import dev.pablogj.spotify2026.songs.presentation.SongView;
 
 public class Main {
 
-    /*
-    // TEST SONGS FEATURE FROM MAIN
 
+    // TEST SONGS FEATURE FROM MAIN
 
     public static void main(String[] args) {
         SongView.printSongs();
+        SongView.saveSong();
     }
-    */
+
 
     /*
     //TEST ALBUMS FEATURE FROM MAIN
@@ -23,9 +23,10 @@ public class Main {
     }
     */
 
+    /*
     //TEST AUTHORS FROM MAIN
     public static void main(String[] args) {
         AuthorView.printAuthors();
     }
-
+    */
 }
