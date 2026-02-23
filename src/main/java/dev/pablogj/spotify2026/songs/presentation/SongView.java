@@ -1,5 +1,6 @@
 package dev.pablogj.spotify2026.songs.presentation;
 
+import dev.pablogj.spotify2026.songs.data.DeleteSongUseCase;
 import dev.pablogj.spotify2026.songs.data.SongDataRepository;
 import dev.pablogj.spotify2026.songs.data.SongsMemLocalDataSource;
 import dev.pablogj.spotify2026.songs.domain.GetSongsUseCase;
@@ -19,6 +20,11 @@ public class SongView {
         Song songTest = new Song("3", "Hotel California", "Eagles", "6:30");
         SaveSongUseCase saveSongUseCase = new SaveSongUseCase(new SongDataRepository(SongsMemLocalDataSource.getInstance()));
         saveSongUseCase.execute(songTest);
+        printSongs();
+    }
+    public static void deleteSong(){
+        DeleteSongUseCase deleteSongUseCase = new DeleteSongUseCase(new SongDataRepository(SongsMemLocalDataSource.getInstance()));
+        deleteSongUseCase.execute("1");
         printSongs();
     }
 }

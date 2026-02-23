@@ -19,8 +19,12 @@ public class SongsMemLocalDataSource {
     public ArrayList<Song> findAll() {
         return songsMemStorage;
     }
+
     public void saveSong(Song song){
         songsMemStorage.add(song);
+    }
+    void deleteSong(String id){
+        songsMemStorage.removeIf(song -> song.getId().equals(id));
     }
     public static SongsMemLocalDataSource getInstance() {
         if (instance == null) {
