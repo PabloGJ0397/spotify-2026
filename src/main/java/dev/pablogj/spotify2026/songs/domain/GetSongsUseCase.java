@@ -8,7 +8,6 @@ public class GetSongsUseCase {
     public GetSongsUseCase(SongRepository songRepository) {
         this.songRepository = songRepository;
     }
-
     public ArrayList<Song> execute(){
         return songRepository.findAll();
     }
