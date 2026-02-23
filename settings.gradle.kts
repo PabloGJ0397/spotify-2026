@@ -1,0 +1,1 @@
+rootProject.name = "spotify-2026"
