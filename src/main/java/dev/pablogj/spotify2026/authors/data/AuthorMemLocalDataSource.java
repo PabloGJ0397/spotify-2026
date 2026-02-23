@@ -22,6 +22,10 @@ public class AuthorMemLocalDataSource {
     public ArrayList<Author> findAll(){
         return authorsMemStorage;
     }
+    public void deleteAuthor(String id){
+        authorsMemStorage.removeIf(author -> author.getId().equals(id));
+    }
+
     public static AuthorMemLocalDataSource getInstance(){
         if(instance == null){
             instance = new AuthorMemLocalDataSource();

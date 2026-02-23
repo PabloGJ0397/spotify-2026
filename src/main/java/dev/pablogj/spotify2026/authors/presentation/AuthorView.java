@@ -5,6 +5,7 @@ import dev.pablogj.spotify2026.authors.data.AuthorApiLocalDataSource;
 import dev.pablogj.spotify2026.authors.data.AuthorDataRepository;
 import dev.pablogj.spotify2026.authors.data.AuthorMemLocalDataSource;
 import dev.pablogj.spotify2026.authors.domain.Author;
+import dev.pablogj.spotify2026.authors.domain.DeleteAuthorUseCase;
 import dev.pablogj.spotify2026.authors.domain.GetAuthorsUseCase;
 import dev.pablogj.spotify2026.authors.domain.SaveAuthorUseCase;
 
@@ -24,4 +25,10 @@ public class AuthorView {
         saveAuthorUseCase.execute(authorTest);
         printAuthors();
     }
+    public static void deleteAuthor(){
+        DeleteAuthorUseCase deleteAuthorUseCase = new DeleteAuthorUseCase(new AuthorDataRepository(AuthorMemLocalDataSource.getInstance(), AuthorApiLocalDataSource.getInstance()));
+        deleteAuthorUseCase.execute("1");
+        printAuthors();
+    }
+
 }

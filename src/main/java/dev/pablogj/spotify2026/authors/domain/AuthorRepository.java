@@ -7,6 +7,7 @@ import java.util.ArrayList;
 public interface AuthorRepository {
     public ArrayList<Author> findAll();
     public void saveAuthor(Author author);
+    public void deleteAuthor(String id);
 
 
 }
