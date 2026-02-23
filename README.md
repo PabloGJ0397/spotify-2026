@@ -27,3 +27,16 @@ Each feature (songs, albums, authors) follows this same structure independently.
 
 - Java
 - Gradle (Kotlin DSL)
+
+## Exercises
+
+- [x] Exercise 01 - Get albums list
+- [x] Exercise 02 - Save author in local
+- [ ] Exercise 03 - Get authors from API using Retrofit
+- [x] Exercise 04a - Singleton pattern in Songs feature
+- [x] Exercise 04b - Singleton pattern in Authors feature
+- [x] Exercise 05a - SaveSongUseCase
+- [x] Exercise 05b - SaveAuthorUseCase
+- [x] Exercise 06a - DeleteSongUseCase
+- [x] Exercise 06b - DeleteAuthorUseCase
+- [x] Exercise 06c - DeleteAlbumUseCase
