@@ -15,20 +15,22 @@ public class Main {
     }
 
 */
-    /*
+
     //TEST ALBUMS FEATURE FROM MAIN
 
     public static void main(String[] args) {
+       AlbumView.printAlbums();
         AlbumView.saveAlbum();
+        AlbumView.deleteAlbum();
     }
-    */
 
 
+/*
     //TEST AUTHORS FROM MAIN
     public static void main(String[] args) {
         AuthorView.printAuthors();
         AuthorView.saveAuthor();
         AuthorView.deleteAuthor();
     }
-
+*/
 }
