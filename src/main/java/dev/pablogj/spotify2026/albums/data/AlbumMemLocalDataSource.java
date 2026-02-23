@@ -22,6 +22,9 @@ public class AlbumMemLocalDataSource {
     public void save(Album album) {
         albumMemStorage.add(album);
     }
+    public void deleteAlbum(String Id) {
+        albumMemStorage.removeIf(album -> album.getId().equals(Id));
+    }
     public static AlbumMemLocalDataSource getInstance() {
         if (instance == null) {
             instance = new AlbumMemLocalDataSource();
