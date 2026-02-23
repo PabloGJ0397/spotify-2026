@@ -6,7 +6,7 @@ import dev.pablogj.spotify2026.authors.domain.Author;
 import java.util.ArrayList;
 
 public class AuthorMemLocalDataSource {
-    public static AuthorMemLocalDataSource instance = new AuthorMemLocalDataSource();
+    private static AuthorMemLocalDataSource instance = null;
     private ArrayList<Author> authorsMemStorage = new ArrayList<>();
 
     private AuthorMemLocalDataSource(){initData();}
