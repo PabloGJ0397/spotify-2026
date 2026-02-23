@@ -12,4 +12,5 @@ public class GetAlbumsUseCase {
     public ArrayList<Album> execute() {
         return albumRepository.findAll();
     }
+
 }
