@@ -1,4 +1,4 @@
-package dev.pablogj.spotify2026.albums;
+package dev.pablogj.spotify2026.albums.domain;
 
 public class Album {
     private String id;
