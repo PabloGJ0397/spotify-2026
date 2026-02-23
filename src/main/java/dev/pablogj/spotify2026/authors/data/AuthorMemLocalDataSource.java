@@ -19,6 +19,9 @@ public class AuthorMemLocalDataSource {
     public void save(Author author){
         authorsMemStorage.add(author);
     }
+    public ArrayList<Author> findAll(){
+        return authorsMemStorage;
+    }
     public static AuthorMemLocalDataSource getInstance(){
         if(instance == null){
             instance = new AuthorMemLocalDataSource();
