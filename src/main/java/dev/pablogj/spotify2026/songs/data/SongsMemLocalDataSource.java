@@ -19,6 +19,9 @@ public class SongsMemLocalDataSource {
     public ArrayList<Song> findAll() {
         return songsMemStorage;
     }
+    public void saveSong(Song song){
+        songsMemStorage.add(song);
+    }
     public static SongsMemLocalDataSource getInstance() {
         if (instance == null) {
             instance = new SongsMemLocalDataSource();
