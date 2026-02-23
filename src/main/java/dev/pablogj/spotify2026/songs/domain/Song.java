@@ -1,6 +1,6 @@
 package dev.pablogj.spotify2026.songs.domain;
 
-public class Songs {
+public class Song {
     private String id;
     private String title;
     private String author;
