@@ -19,9 +19,9 @@ Each feature (songs, albums, authors) follows this same structure independently.
 
 ## Features
 
-- [ ] Songs
-- [ ] Albums
-- [ ] Authors
+- [x] Songs
+- [x] Albums
+- [x] Authors
 
 ## Tech Stack
 
