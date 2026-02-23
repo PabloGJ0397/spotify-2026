@@ -12,7 +12,5 @@ public class SongView {
         GetSongsUseCase getSongsUseCase = new GetSongsUseCase(new SongDataRepository());
          ArrayList<Song> songs = getSongsUseCase.execute();
         System.out.println("Songs: \n" + songs);
-
-
     }
 }
