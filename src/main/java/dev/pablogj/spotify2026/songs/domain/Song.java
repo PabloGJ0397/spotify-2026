@@ -44,4 +44,9 @@ public class Song {
     public void setDuration(String duration) {
         this.duration = duration;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Song {Id: %s, Title: %s, Author: %s, Duration: %s}", id, title, author, duration);
+    }
 }
