@@ -17,4 +17,10 @@ public class SongDataRepository implements SongRepository {
         return songsMemLocalDataSource.findAll();
     }
 
+    @Override
+    public void saveSong(Song song) {
+       songsMemLocalDataSource.saveSong(song);
+    }
+
+
 }
