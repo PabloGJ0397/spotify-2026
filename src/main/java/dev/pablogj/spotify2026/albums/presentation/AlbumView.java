@@ -23,7 +23,7 @@ public class AlbumView {
         printAlbums();
     }
 
-    public void deleteAlbum(){
+    public static void deleteAlbum(){
         DeleteAlbumUseCase deleteAlbumUseCase = new DeleteAlbumUseCase(new AlbumDataRepository(AlbumMemLocalDataSource.getInstance()));
         deleteAlbumUseCase.execute("1");
         printAlbums();
